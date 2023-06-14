@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Practica_Herencia;
 
 
@@ -15,15 +12,17 @@ public class Vehiculo {
 public void setNumeroRuedas(int rueda){
     numRueda=rueda;
 }
-//creamos los pubic void de la clase encendido donde le diremos que si el vehiculo esta encendido sea tru
+/*creamos los pubic void de la clase encendido donde le diremos que si 
+el vehiculo esta encendido sea tru*/
 public void encendido(){
     encendido=true;
-    estado="Vehiculo encendido";
+    estado="El Vehiculo esta encendido";
 }
-//creamos los pubic void de la clase apagado donde le diremos que si el vehiculo esta apagado sea false 
+/*creamos los pubic void de la clase apagado donde le diremos que si el 
+vehiculo esta apagado sea false */
 public void apagado(){
     encendido=false;
-    estado="Vehiclo apagado";
+    estado="El Vehiclo esta apagado";
 }
 
 }
