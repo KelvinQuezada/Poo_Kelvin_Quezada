@@ -6,13 +6,16 @@ import model.Model;
 import view.View;
 
 public class Controller {
+    // Atributos
     private Model model;
     private View view;
 
+    // Constructor
     public Controller(Model model, View view) {
         this.model = model;
         this.view = view;
 
+        // Asociar un ActionListener al botón de suma
         view.getAddButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -20,6 +23,7 @@ public class Controller {
             }
         });
 
+        // Asociar un ActionListener al botón de resta
         view.getSubtractButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -27,6 +31,7 @@ public class Controller {
             }
         });
 
+        // Asociar un ActionListener al botón de multiplicación
         view.getMultiplyButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,6 +39,7 @@ public class Controller {
             }
         });
 
+        // Asociar un ActionListener al botón de división
         view.getDivideButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -42,6 +48,7 @@ public class Controller {
         });
     }
 
+    // Método para realizar la operación de suma
     public void calculateAddition() {
         int operand1 = view.getOperand1();
         int operand2 = view.getOperand2();
@@ -53,6 +60,7 @@ public class Controller {
         view.setResultField(String.valueOf(result));
     }
 
+    // Método para realizar la operación de resta
     public void calculateSubtraction() {
         int operand1 = view.getOperand1();
         int operand2 = view.getOperand2();
@@ -64,6 +72,7 @@ public class Controller {
         view.setResultField(String.valueOf(result));
     }
 
+    // Método para realizar la operación de multiplicación
     public void calculateMultiplication() {
         int operand1 = view.getOperand1();
         int operand2 = view.getOperand2();
@@ -75,6 +84,7 @@ public class Controller {
         view.setResultField(String.valueOf(result));
     }
 
+    // Método para realizar la operación de división
     public void calculateDivision() {
         int operand1 = view.getOperand1();
         int operand2 = view.getOperand2();
